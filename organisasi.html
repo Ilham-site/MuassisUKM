@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertubuhan IMAN | Laman Utama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Tetapan asas untuk kelancaran scroll */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-3xl font-bold text-green-700">IMAN</a>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-green-700 font-semibold hover:text-green-500">Utama</a>
+                    <a href="about.html" class="text-gray-600 hover:text-green-600 transition">Tentang Kami</a>
+                    <a href="matlamat.html" class="text-gray-600 hover:text-green-600 transition">Matlamat</a>
+                    <a href="penglibatan.html" class="text-gray-600 hover:text-green-600 transition">Penglibatan</a>
+                    <a href="organisasi.html" class="text-gray-600 hover:text-green-600 transition">Organisasi</a>
+                    <a href="hubungi-kami.html" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">Hubungi Kami</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-green-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block px-4 py-3 text-green-700 font-semibold bg-gray-50">Utama</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Tentang Kami</a>
+            <a href="matlamat.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Matlamat</a>
+            <a href="penglibatan.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Penglibatan</a>
+            <a href="organisasi.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Organisasi</a>
+            <a href="hubungi-kami.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50">Hubungi Kami</a>
+        </div>
+    </header>
+
+<main class="flex-grow py-16 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <p class="text-emerald-600 font-bold uppercase tracking-widest text-sm mb-2">Kepimpinan</p>
+        <h1 class="text-5xl font-extrabold text-emerald-900">Carta Organisasi</h1>
+        <div class="h-1.5 w-24 bg-emerald-500 mx-auto mt-6 rounded-full"></div>
+    </div>
+    
+    <div class="flex flex-col items-center">
+        <div class="relative mb-12">
+            <div class="bg-white border border-emerald-100 shadow-xl px-12 py-8 rounded-[40px] text-center min-w-[300px]">
+                <h3 class="font-black text-emerald-900 text-xl tracking-tight uppercase">FAQRUL NASRUDIN</h3>
+                <span class="inline-block mt-2 bg-[#062D1D] text-white text-[10px] px-6 py-1.5 rounded-full font-bold uppercase tracking-widest">Presiden</span>
+            </div>
+            <div class="h-12 w-0.5 bg-emerald-200 mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 md:gap-24 mb-12 relative">
+            <div class="hidden md:block absolute top-0 left-1/4 right-1/4 h-0.5 bg-emerald-200 -mt-0"></div>
+            
+            <div class="bg-white border border-emerald-50 shadow-lg px-10 py-8 rounded-[35px] text-center min-w-[280px]">
+                <h3 class="font-black text-emerald-900 text-lg uppercase">ADIBAH ROSLI</h3>
+                <p class="text-emerald-600 font-bold text-xs mt-1 uppercase tracking-wider">Setiausaha Agung</p>
+            </div>
+
+            <div class="bg-white border border-emerald-50 shadow-lg px-10 py-8 rounded-[35px] text-center min-w-[280px]">
+                <h3 class="font-black text-emerald-900 text-lg uppercase">AIN ZUBAIDAH</h3>
+                <p class="text-emerald-600 font-bold text-xs mt-1 uppercase tracking-wider">Ketua Wanita</p>
+            </div>
+        </div>
+
+        <div class="h-12 w-0.5 bg-emerald-200 mb-8 hidden md:block"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 w-full">
+            <div class="bg-white/60 border border-emerald-50 shadow-md p-6 rounded-[25px] text-center">
+                <h4 class="font-black text-emerald-900 text-sm uppercase">HAIRUL ANUAR</h4>
+                <p class="text-gray-400 font-bold text-[9px] mt-2 uppercase leading-tight">Ketua Biro Dakwah & Media</p>
+            </div>
+
+            <div class="bg-white/60 border border-emerald-50 shadow-md p-6 rounded-[25px] text-center">
+                <h4 class="font-black text-emerald-900 text-sm uppercase">ALIF ZIKRI</h4>
+                <p class="text-gray-400 font-bold text-[9px] mt-2 uppercase leading-tight">Ketua Biro Belia (L)</p>
+            </div>
+
+            <div class="bg-white/60 border border-emerald-50 shadow-md p-6 rounded-[25px] text-center">
+                <h4 class="font-black text-emerald-900 text-sm uppercase">AUNI HANANI</h4>
+                <p class="text-gray-400 font-bold text-[9px] mt-2 uppercase leading-tight">Ketua Biro Belia (P)</p>
+            </div>
+
+            <div class="bg-white/60 border border-emerald-50 shadow-md p-6 rounded-[25px] text-center">
+                <h4 class="font-black text-emerald-900 text-sm uppercase">ADLI ZAMAN</h4>
+                <p class="text-gray-400 font-bold text-[9px] mt-2 uppercase leading-tight">Ketua Biro Baitul Muslim Dan Aulad (L)</p>
+            </div>
+
+            <div class="bg-white/60 border border-emerald-50 shadow-md p-6 rounded-[25px] text-center">
+                <h4 class="font-black text-emerald-900 text-sm uppercase">NORASHIQIN ZAWAWI</h4>
+                <p class="text-gray-400 font-bold text-[9px] mt-2 uppercase leading-tight">Ketua Biro Baitul Muslim Dan Aulad (P)</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Pertubuhan Ikatan Mukminin Nasional (IMAN)</h2>
+            <p class="text-gray-400 mb-6">Membina generasi mukmin yang kompeten, yakin, dan menyumbang kembali kepada masyarakat.</p>
+            <p class="text-gray-500 text-sm">© 2026 Pertubuhan IMAN. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
